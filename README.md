@@ -28,3 +28,18 @@ allowPublicKeyRetrieval
   sudo lsof -i :3306
 
 ```
+
+
+### instead of using docker just use flox
+- flox pull flox/postgres
+- flox activate --start-services
+- flox edit. check address, port, user, pass
+```
+PGHOSTADDR = "127.0.0.1"
+PGPORT = "15432"
+PGUSER = "pguser"
+PGPASS = "pgpass"
+PGDATABASE = "pgdb"
+
+```
+- use this for dbeaver
